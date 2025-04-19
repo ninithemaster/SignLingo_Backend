@@ -8,10 +8,15 @@ from werkzeug.utils import secure_filename
 import PIL.Image
 from google import genai
 from google.genai import types
-from app.auth import sign_up, sign_in,forgot_password
+from app.database import init_db, mongo
+from app.auth import sign_up, sign_in, forgot_password
+
 
 # Load YOLO model
 app = Flask(__name__) 
+# Initialize MongoDB
+init_db(app)
+
 obj_model = YOLO("yolov10n.pt")
 MODEL_PATH = 'sign_language_model.keras'  # or .h5 if you're still using that
 IMAGE_SIZE = (128, 128)
@@ -46,21 +51,9 @@ def obj_detection():
 
     # Run YOLO object detection
     results = obj_model.predict(image)
-
-    # Extract detected objects
-    detected_objects = []
-    for result in results:
-        for box in result.boxes:
-            x1, y1, x2, y2 = box.xyxy[0].tolist()
-            class_id = int(box.cls[0])
-            confidence = float(box.conf[0])
-            detected_objects.append({
-                "class_id": class_id,
-                "bbox": [x1, y1, x2, y2],
-                "confidence": confidence
-            })
-
-    return jsonify({"detections": detected_objects})
+    detected_objects = [obj_model.names[int(box.cls)] for box in results[0].boxes]
+    unique_detected_objects = list(set(detected_objects))
+    return jsonify({"detections": unique_detected_objects})
 
 
 @app.route('/predict', methods=['POST'])
@@ -95,7 +88,7 @@ def predict():
     })
 
 
-@app.route("/gemini", methods=["POST"])
+@app.route("/gemini-detection", methods=["POST"])
 def gemini_detection():
     if 'image' not in request.files:
         return jsonify({'error': 'No image provided'}), 400
@@ -107,7 +100,7 @@ def gemini_detection():
     if not mime_type:
         return jsonify({'error': 'Could not determine MIME type'}), 400
 
-    prompt = "Identify the sign language alphabet shown in the image. Just return the letter. Do not explain."
+    prompt = "Identify the object shown in the image. Just return the object's name. Do not explain."
 
     # Prepare image as Gemini Part
     part = {
@@ -123,15 +116,27 @@ def gemini_detection():
     model="gemini-2.5-pro-exp-03-25",
     contents=[part, prompt],
 )
-
-    return jsonify({'prediction': response.text})
+    detected_objects = response.text
+    unique_detected_objects = list(detected_objects.split(" "))
+    return jsonify({'prediction': unique_detected_objects})
 
 
 @app.route('/signup', methods=['POST'])
 def signup():
-    data = request.json
-    response, status = sign_up(data['email'], data['password'])
-    return jsonify(response), status
+    data = request.get_json(force=True)  # <-- Force JSON parsing
+
+    print("Received signup data:", data)  # Debug print
+
+    if not all(key in data for key in ['email', 'password', 'name']):
+        return jsonify({"error": "Missing required fields"}), 400
+
+    try:
+        response, status = sign_up(data['email'], data['password'], data['name'])
+        return jsonify(response), status
+    except Exception as e:
+        print("Error in sign_up:", e)
+        return jsonify({"error": "Server error occurred"}), 500
+
 
 @app.route('/signin', methods=['POST'])
 def signin():

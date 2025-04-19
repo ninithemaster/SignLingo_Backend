@@ -1,0 +1,10 @@
+flask==3.0.2
+pymongo==4.6.2
+flask-pymongo==2.3.0
+python-dotenv==1.0.1
+ultralytics==8.1.28
+opencv-python==4.9.0.80
+tensorflow==2.15.0
+pillow==10.2.0
+google-generativeai==0.3.2
+pyrebase4==4.7.1 

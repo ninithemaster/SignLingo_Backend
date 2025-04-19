@@ -1,2 +1,7 @@
 sign_language_model.keras
 yolov10n.pt
+.venv
+.env
+__pycache__/
+*.pyc
+uploads/
