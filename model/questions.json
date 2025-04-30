@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "question": "What is the sign for the letter 'A' in ASL?",
+        "options": ["Palm open, fingers together", "Fist with thumb on side", "Thumb and index making circle", "Hand flat, palm down"],
+        "answer": "Fist with thumb on side"
+    },
+    {
+        "id": 2,
+        "question": "Which of these signs represents 'Hello' in ASL?",
+        "options": ["Wave near forehead", "Two fingers tapping chin", "Thumb up", "Palm touching chest"],
+        "answer": "Wave near forehead"
+    },
+    {
+        "id": 3,
+        "question": "Which sign means 'Thank You' in ASL?",
+        "options": ["Flat palm from chin outward", "Hand wave", "Thumb and index forming a circle", "Hands apart from each other"],
+        "answer": "Flat palm from chin outward"
+    },
+    {
+        "id": 4,
+        "question": "How do you sign 'Friend' in ASL?",
+        "options": ["Link index fingers together", "Two hands crossing over", "Both hands making fists and tapping", "Finger pointing up"],
+        "answer": "Link index fingers together"
+    },
+    {
+        "id": 5,
+        "question": "What is the sign for 'Book' in ASL?",
+        "options": ["Hands opening like a book", "Clapping hands", "One hand waving", "Two fingers on lips"],
+        "answer": "Hands opening like a book"
+    },
+    {
+        "id": 6,
+        "question": "What is the sign for 'Teacher' in ASL?",
+        "options": ["Both hands tapping forehead", "Both hands sweeping across the body", "Flat hands on top of the head", "Thumbs pointing to eyes"],
+        "answer": "Both hands tapping forehead"
+    },
+    {
+        "id": 7,
+        "question": "Which sign represents 'Eat' in ASL?",
+        "options": ["Fingers to lips", "Flat hand to mouth", "Fist motion", "Fingers snapping"],
+        "answer": "Fingers to lips"
+    },
+    {
+        "id": 8,
+        "question": "What is the sign for 'Water' in ASL?",
+        "options": ["W-shape with fingers to mouth", "Water wave motion", "Open hand touching lips", "Closed fist near chest"],
+        "answer": "W-shape with fingers to mouth"
+    },
+    {
+        "id": 9,
+        "question": "How do you sign 'Mother' in ASL?",
+        "options": ["Open palm touching chin", "Closed fist near chin", "Thumb on forehead", "Flat hand on chest"],
+        "answer": "Open palm touching chin"
+    },
+    {
+        "id": 10,
+        "question": "What is the sign for 'Name' in ASL?",
+        "options": ["Index and middle finger tapping each other", "Two fists shaking", "Hands flat on forehead", "Open palms facing each other"],
+        "answer": "Index and middle finger tapping each other"
+    },
+    {
+        "id": 11,
+        "question": "What is the sign for 'Sit' in ASL?",
+        "options": ["Motion as if sitting", "Hands on knees", "Hands forming an 'S' shape", "Fingers crossed"],
+        "answer": "Motion as if sitting"
+    },
+    {
+        "id": 12,
+        "question": "How do you sign 'Yes' in ASL?",
+        "options": ["Nodding motion with fist", "Thumb pointing up", "Tapping on the chest", "Two hands raised"],
+        "answer": "Nodding motion with fist"
+    },
+    {
+        "id": 13,
+        "question": "What is the sign for 'No' in ASL?",
+        "options": ["Index and middle finger tapping thumb", "Shaking head", "Hand waving side to side", "Index finger pointing down"],
+        "answer": "Index and middle finger tapping thumb"
+    },
+    {
+        "id": 14,
+        "question": "What is the sign for 'Bathroom' in ASL?",
+        "options": ["T-shape hand shaking", "Hands on hips", "Thumb on forehead", "Finger pointing downward"],
+        "answer": "T-shape hand shaking"
+    },
+    {
+        "id": 15,
+        "question": "How do you sign 'I Love You' in ASL?",
+        "options": ["I-L-Y handshape", "Two hands in a heart shape", "Open hands clapping", "One hand raised to the sky"],
+        "answer": "I-L-Y handshape"
+    },
+    {
+        "id": 16,
+        "question": "What is the sign for 'Father' in ASL?",
+        "options": ["Thumb on forehead", "Flat hand on forehead", "Two fingers pointing", "Hands crossing over chest"],
+        "answer": "Thumb on forehead"
+    },
+    {
+        "id": 17,
+        "question": "How do you sign 'School' in ASL?",
+        "options": ["Palms clapping together", "Fingers snapping", "Hands moving side to side", "Flat hands on head"],
+        "answer": "Palms clapping together"
+    },
+    {
+        "id": 18,
+        "question": "What is the sign for 'Friend' in ISL?",
+        "options": ["Link index fingers together", "Hands on chest", "Hands in a fist", "Circle motion with hands"],
+        "answer": "Link index fingers together"
+    },
+    {
+        "id": 19,
+        "question": "What is the sign for 'Thank You' in ISL?",
+        "options": ["Flat palm from chin outward", "Fingers to lips", "Waving hands", "Touching chest and bowing"],
+        "answer": "Flat palm from chin outward"
+    },
+    {
+        "id": 20,
+        "question": "How do you sign 'Water' in ISL?",
+        "options": ["W-hand to mouth", "Fist near lips", "Hands opening", "Circle motion with fingers"],
+        "answer": "W-hand to mouth"
+    },
+    {
+        "id": 21,
+        "question": "What is the sign for 'Eat' in ISL?",
+        "options": ["Flat hand to lips", "Index finger pointing", "Two hands tapping", "Clapping hands"],
+        "answer": "Flat hand to lips"
+    },
+    {
+        "id": 22,
+        "question": "How do you sign 'School Bag' in ISL?",
+        "options": ["Motion as if putting on straps", "Fingers on back", "Hands on shoulder", "Tapping hands together"],
+        "answer": "Motion as if putting on straps"
+    },
+    {
+        "id": 23,
+        "question": "What is the sign for 'Mother' in ISL?",
+        "options": ["Thumb on chin", "Open hand on chest", "Hands in front of mouth", "Hand on forehead"],
+        "answer": "Thumb on chin"
+    },
+    {
+        "id": 24,
+        "question": "What is the sign for 'Yes' in ISL?",
+        "options": ["Nodding motion with fist", "Thumb pointing up", "Hands tapping chest", "Shaking head"],
+        "answer": "Nodding motion with fist"
+    },
+    {
+        "id": 25,
+        "question": "How do you sign 'Sit' in ISL?",
+        "options": ["Motion as if sitting", "Clapping hands", "Fingers crossed", "Hands on knees"],
+        "answer": "Motion as if sitting"
+    },
+    {
+        "id": 26,
+        "question": "What is the sign for 'Name' in ISL?",
+        "options": ["Index and middle finger tapping each other", "Flat hand motion", "Fingers crossed", "Hands waving"],
+        "answer": "Index and middle finger tapping each other"
+    },
+    {
+        "id": 27,
+        "question": "What is the sign for 'Father' in ISL?",
+        "options": ["Thumb on forehead", "Flat hand on chest", "Hands raised", "Circle motion with hands"],
+        "answer": "Thumb on forehead"
+    },
+    {
+        "id": 28,
+        "question": "How do you sign 'Hello' in ISL?",
+        "options": ["Wave near forehead", "Waving both hands", "Hands raised in air", "Flat palm waving"],
+        "answer": "Wave near forehead"
+    },
+    {
+        "id": 29,
+        "question": "What is the sign for 'Book' in ISL?",
+        "options": ["Hands opening like a book", "Hands crossed", "Flat hands on head", "Hands moving side to side"],
+        "answer": "Hands opening like a book"
+    },
+    {
+        "id": 30,
+        "question": "How do you sign 'Friend' in ISL?",
+        "options": ["Index fingers hooking", "Both hands making fists", "Hands on chest", "Both hands waving"],
+        "answer": "Index fingers hooking"
+    }
+]
